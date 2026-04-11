@@ -22,6 +22,7 @@
     statusline.lualine = {
       enable = true;
     };
+
     utility.oil-nvim = {
       enable = true;
       gitStatus.enable = true;
@@ -35,15 +36,16 @@
       };
     };
 
-    lsp.formatOnSave = true;
-    lsp.mappings.format = "<leader>lf";
-    lsp.enable = true;
+    # ============================= LSP ============================
     # This does not work, simply because it fucking breaks all other binds.
-    #lsp.servers.nixd.settings = {
-    #nixd.nixpkgs.expr = "import <nixpkgs> {}";
-    #};
+    # lsp.servers.nixd.settings = {
+    # nixd.nixpkgs.expr = "import <nixpkgs> {}";
+    # };
+
     autocomplete.blink-cmp.enable = true;
 
+    lsp.enable = true;
+    lsp.formatOnSave = true;
     languages = {
       nix = {
         enable = true;
