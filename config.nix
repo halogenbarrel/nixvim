@@ -6,8 +6,8 @@
   config.vim = {
     # =========================== Themes ===========================
     theme.enable = true;
-    theme.name = "rose-pine";
-    theme.style = "main";
+    theme.name = "solarized-osaka";
+    # theme.style = "medium";
 
     # ============================ Globals =========================
     globals.mapleader = " ";
