@@ -7,7 +7,7 @@
     # =========================== Themes ===========================
     theme.enable = true;
     theme.name = "rose-pine";
-    theme.style = "dark";
+    theme.style = "main";
 
     # ============================ Globals =========================
     globals.mapleader = " ";
