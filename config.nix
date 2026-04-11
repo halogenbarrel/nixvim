@@ -6,11 +6,13 @@
   config.vim = {
     # =========================== Themes ===========================
     theme.enable = true;
-    theme.name = "gruvbox";
+    theme.name = "rose-pine";
     theme.style = "dark";
 
     # ============================ Globals =========================
     globals.mapleader = " ";
+    options.tabstop = 2;
+    options.shiftwidth = 2;
 
     # =========================== Plugins ==========================
     git.neogit.enable = true;
