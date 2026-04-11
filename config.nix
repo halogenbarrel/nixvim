@@ -26,23 +26,35 @@
       enable = true;
       gitStatus.enable = true;
       setupOpts = {
-        columns = ["icon" "permissions" "mtime"];
+        columns = [
+          "icon"
+          "permissions"
+          "mtime"
+        ];
         view_options.show_hidden = true;
       };
     };
 
     lsp.formatOnSave = true;
     lsp.mappings.format = "<leader>lf";
+    lsp.enable = true;
+
+          lsp.servers.nixd.settings = {
+            nixd.nixpkgs.expr = "import <nixpkgs> {}";
+          };
     autocomplete.blink-cmp.enable = true;
+
     languages = {
       nix = {
         enable = true;
         format.enable = true;
         lsp = {
-          enable = true;
           servers = ["nixd"];
         };
         treesitter.enable = true;
+      };
+      clang = {
+        enable = true;
       };
     };
 
