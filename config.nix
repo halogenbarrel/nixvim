@@ -6,8 +6,8 @@
   config.vim = {
     # =========================== Themes ===========================
     theme.enable = true;
-    theme.name = "solarized-osaka";
-    # theme.style = "medium";
+    theme.name = "gruber-darker";
+    theme.style = "deep";
 
     # ============================ Globals =========================
     globals.mapleader = " ";
@@ -15,7 +15,13 @@
     options.shiftwidth = 2;
 
     # =========================== Plugins ==========================
+
+    mini.surround.enable = true;
+    mini.comment.enable = true;
+    mini.pairs.enable = true;
+
     git.neogit.enable = true;
+    visuals.fidget-nvim.enable = true;
     telescope = {
       enable = true;
     };
@@ -60,6 +66,12 @@
       clang = {
         enable = true;
       };
+      rust = {
+        enable = true;
+      };
+      python = {
+        enable = true;
+      };
     };
 
     # =========================== Keymaps ==========================
@@ -70,6 +82,55 @@
         mode = "n";
         silent = true;
         action = ":Oil<CR>";
+      }
+      {
+        key = "<leader>wd";
+        mode = "n";
+        silent = true;
+        action = ":close<CR>";
+      }
+      {
+        key = "<leader>wv";
+        mode = "n";
+        silent = true;
+        action = ":vsplit<CR>";
+      }
+      {
+        key = "<leader>ws";
+        mode = "n";
+        silent = true;
+        action = ":split<CR>";
+      }
+      {
+        key = "<leader>wo";
+        mode = "n";
+        silent = true;
+        action = ":only<CR>";
+      }
+      # movement
+      {
+        key = "<C-h>";
+        mode = "n";
+        silent = true;
+        action = ":wincmd h<CR>";
+      }
+      {
+        key = "<C-j>";
+        mode = "n";
+        silent = true;
+        action = ":wincmd j<CR>";
+      }
+      {
+        key = "<C-k>";
+        mode = "n";
+        silent = true;
+        action = ":wincmd k<CR>";
+      }
+      {
+        key = "<C-l>";
+        mode = "n";
+        silent = true;
+        action = ":wincmd l<CR>";
       }
     ];
   };
