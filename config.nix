@@ -23,11 +23,11 @@
     navigation.harpoon = {
       enable = true;
       mappings = {
-        file1 = "1";
-        file2 = "2";
-        file3 = "3";
-        file4 = "4";
-        listMarks = "o";
+        file1 = "<leader>h1";
+        file2 = "<leader>h2";
+        file3 = "<leader>h3";
+        file4 = "<leader>h4";
+        listMarks = "hl";
       };
     };
 
