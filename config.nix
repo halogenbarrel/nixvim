@@ -6,8 +6,8 @@
   config.vim = {
     # =========================== Themes ===========================
     theme.enable = true;
-    theme.name = "gruber-darker";
-    theme.style = "deep";
+    theme.name = "everforest";
+    theme.style = "hard";
 
     # ============================ Globals =========================
     globals.mapleader = " ";
@@ -19,6 +19,17 @@
     mini.surround.enable = true;
     mini.comment.enable = true;
     mini.pairs.enable = true;
+    mini.diff.enable = true;
+    navigation.harpoon = {
+      enable = true;
+      mappings = {
+        file1 = "1";
+        file2 = "2";
+        file3 = "3";
+        file4 = "4";
+        listMarks = "o";
+      };
+    };
 
     git.neogit.enable = true;
     visuals.fidget-nvim.enable = true;
